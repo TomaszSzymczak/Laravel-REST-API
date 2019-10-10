@@ -26,38 +26,38 @@ As a response You will get access_token which You later can use with Authorizati
 
 ### List publishers
 
-uri: api/v1/publishers/list
-method: GET
-headers:
-    Authorization: Bearer access_token
-    Accept: application/json
+uri: api/v1/publishers/list  
+method: GET  
+headers:  
+    Authorization: Bearer access_token  
+    Accept: application/json  
 
-additional parameters You can add in query string:
-order_by: "id" or "name"
-per_page: int
-page: int
+additional parameters You can add in query string:  
+order_by: "id" or "name"  
+per_page: int  
+page: int  
 
 ### Search magazines
 
-uri: api/v1/magazines/search
-method: GET
-headers:
-    Authorization: Bearer access_token
-    Accept: application/json
+uri: api/v1/magazines/search  
+method: GET  
+headers:  
+    Authorization: Bearer access_token  
+    Accept: application/json  
 
-additional parameters You can add in query string:
-publisher_id: int
-name_part: string (at least three characters)
-per_page: int
-page: int
+additional parameters You can add in query string:  
+publisher_id: int  
+name_part: string (at least three characters)  
+per_page: int  
+page: int  
 
 ### Show magazine
 
-uri: api/v1/magazines/{id}
-method: GET
-headers:
-    Authorization: Bearer access_token
-    Accept: application/json
+uri: api/v1/magazines/{id}  
+method: GET  
+headers:  
+    Authorization: Bearer access_token  
+    Accept: application/json  
 
 ## How to install
 
