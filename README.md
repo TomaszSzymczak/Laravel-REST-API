@@ -73,6 +73,8 @@ The last command will create app key in .env file. Please copy that key to .env.
 Create two databases, one standard and other for testing.  
 Then put db credentials in .env and .env.testing files.
 
+You should also create vhost indicating to ./public and add host to /etc/hosts.
+
 If You migrate tables to test database:
 ```
 php artisan migrate --env=testing
@@ -85,10 +87,9 @@ php artisan migrate
 php artisan db:seed
 ```
 
-Now You should make Oauth2 client with a password grant.
+Now You should make OAuth2 client with a password grant.
 ```
 php artisan passport:client --password
 ```
+You will see client id and client secret, which You can now use to obtain access token.  
 We assume, that every logged in user is authorized to use API - there is no user roles.
-
-You should also create vhost indicating to ./public and add host to /etc/hosts.
